@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Test task</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<style>
+body {font-family: "Lato", sans-serif}
+#textDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+.container {
+  height: 200px;
+  position: relative;
+  border: 3px;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+button {
+    background-color: rgb(233, 128, 87);
+    color: #fff;
+    border: 1px solid;
+    padding: 10px;
+    width: 100px;
+    outline: none;
+    border-radius: 12px;
+    margin: auto;
+}
+</style>
+<body>
+  <div class="container">
+    <div class="center">
+      <button id="toggleBTN" onclick="toggleText()">Toggle text</button>
+    </div>
+  </div>
+  <div id="textDIV" style="display: none">
+    Knock knock. Race condition. Who's there?
+  </div>
+  <script src="toggleText.js"></script>
+</body>
+</html>
