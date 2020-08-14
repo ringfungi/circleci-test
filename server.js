@@ -9,4 +9,8 @@ app.use('/', function(req,res){
   });
 const server = http.createServer(app);
 server.listen(process.env.PORT || 5000, '0.0.0.0');
-console.debug('Server listening on port ' + port);
+if (process.env.PORT ) {
+  console.debug('Server listening on port ' + process.env.PORT);
+} else {
+  console.debug('Server listening on port 5000');
+}
